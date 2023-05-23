@@ -59,6 +59,41 @@ function backspace(){
     screen.value = space.value.substring(0, space.value.length -1);
 }
 
+// calculate function
+function calculate(){
+  if(screen.value != ''){
+  try{
+    clearScreen(eval(screen.value))
+  }catch(err){
+    clearScreen("Bad expression")
+  }
+}
+}
 
-abcvbsvdfdf
 
+
+// function to calculate the sin, cosine and tan of a angle in DEG(degree)
+function sin(){
+  screen.value = Math.sin(screen.value) * (Math.PI / 180);
+}
+
+function cosine(){
+  screen.value = Math.cos(screen.value) * (Math.PI / 180);
+}
+
+function tan(){
+  screen.value = Math.tan(screen.value)* (Math.PI / 180);
+}
+
+// function to calculate the asin, acos and atan of a angle in DEG(degree)
+function asin(){
+  screen.value = Math.sin(screen.value) * (180 / Math.PI);
+}
+
+function acos(){
+  screen.value = Math.sin(screen.value) * (180 / Math.PI);
+}
+
+function atan(){
+  screen.value = Math.sin(screen.value) * (180 / Math.PI);
+}
