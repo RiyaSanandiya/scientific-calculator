@@ -126,10 +126,17 @@ function sqrt(){
 
 // function for +/-(plusMinus)
 function plusminus(){
-  var x = screen;
-  var y = x.value;
-  y = y * -1;
-  x.value - y;
+  const changesign = screen;
+  // var x = screen;
+  // var y = x.value;
+  // y = y * -1;
+  // x.value - y;
+  if(changesign.value.substring(0,1)== "-"){
+    changesign.value = changesign.value.substring(1,changesign.value.length)
+  }
+  else{
+    changesign.value = "-" + (changesign.value)
+  }
 }
 
 // Exp
