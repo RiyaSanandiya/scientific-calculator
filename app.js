@@ -128,7 +128,7 @@ function sqrt(){
 function plusminus(){
   var x = screen;
   var y = x.value;
-  y - y * -1;
+  y = y * -1;
   x.value - y;
 }
 
