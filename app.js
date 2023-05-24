@@ -11,6 +11,7 @@ function startTime() {
     hour = hour - 12;
   }
 
+
   // add zero if less than 10
   hour = concatZero(hour);
   minutes = concatZero(minutes);
@@ -117,7 +118,7 @@ function square(){
   screen.value = Math.pow(screen.value, 2)
 }
 function cube(){
-  screen.value = Math.cube(screen.value, 3)
+  screen.value = Math.pow(screen.value, 3)
 }
 function sqrt(){
   screen.value = Math.sqrt(screen.value)
